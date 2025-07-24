@@ -10,3 +10,9 @@
 // button.addEventListener("click",function(){
 //     console.log(add(+input1.value,+input2.value));
 // })
+
+type Test = { name: string; age: number; hobbies: { name: string }[] };
+
+const test: Test = { name: "John", age: 30, hobbies: [{ name: "Studying" }] };
+
+// type inference, type casting, 
