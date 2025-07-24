@@ -1,10 +1,26 @@
 "use strict";
-function getFirstElement(array) {
-    return array[0];
+const getHello = (s) => {
+    return "";
+};
+const heros = ["thor", "spiderman", "ironman"];
+//const heros=[1,2,3]
+heros.map((hero) => {
+    return 'hero is ${hero}';
+});
+function consoleError(errmsg) {
+    console.log(errmsg);
+    return;
 }
-const numbers = [1, 2, 3];
-const firstNum = getFirstElement(numbers);
-const strings = ["ram", "sita", "hari"];
-const firstString = getFirstElement(strings);
-console.log(strings);
-console.log(numbers);
+function handleError(errmsg) {
+    throw new Error(errmsg);
+} //the never type represents values which are never observed. In return type, this means that function throws an exception or terminated execution of program 
+//any
+let hero;
+function getHero() {
+    return "hero";
+}
+hero = getHero(); // whenever you dont want a value to cause typechecking errors
+const getHi = (s) => {
+    return "";
+};
+// tyo bahira ko string bhaneko return type must be string 
