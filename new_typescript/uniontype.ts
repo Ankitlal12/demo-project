@@ -30,3 +30,12 @@ function getDbId(id:number|string){
     id
    }
 }
+
+//array
+const data1:number[]=[1,2,3,4]
+const data2:string[]=["1","2","3","4"]
+const data3: (number | string)[]=["1",2,4,5]
+
+let seatAllotment:"aisele"|"middle"|"window"
+
+seatAllotment="aisele"
