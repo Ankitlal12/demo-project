@@ -16,8 +16,8 @@ type user={
     name:string;
     email:string;
     price:number;
-    active:boolean
-    creditCard:number
+    active:boolean,
+    creditCard?:number // ? is optinal symbol
 }
 
 let myUser:user={
@@ -27,6 +27,15 @@ let myUser:user={
     price:5,
     active:true,
     
+}
+type cardNumber={
+    cardnumber:number
+}
+type cardDate={
+    carddate:number
+}
+type cardDetails=cardNumber & cardDate&{
+    cvv:number
 }
 
 myUser.email="akdakd@gmail.com"
